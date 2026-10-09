@@ -1,66 +1,57 @@
 # Sarcastic Kitchen – Food Blog Landing Page (Adsterra Ready)
 
-A clean, static HTML/CSS landing page inspired by [sarcasticcooking.com](https://www.sarcasticcooking.com/).  
-Designed for easy monetization with **Adsterra** and free hosting on **GitHub Pages**.
+A clean, multi-page static website inspired by sarcasticcooking.com.  
+Ready for **Adsterra** ads and free hosting on **GitHub Pages**.
+
+## Pages Included
+
+| File | Description |
+|------|-------------|
+| `index.html` | Home page with 6 recipe posts + sidebar |
+| `about.html` | About the author |
+| `contact.html` | Contact form + email |
+| `privacy-policy.html` | Full Privacy Policy (important for ads) |
+| `style.css` | Shared styles |
 
 ## Features
 
-- Responsive food-blog layout (header + logo, navigation, large post cards, sticky sidebar)
-- Multiple ready-made ad slots:
-  - Top 728×90 banner
-  - Mid-content Native / 300×250
-  - Sidebar 300×250 (×2)
-- Clear comments showing exactly where to paste Adsterra codes
-- No frameworks, no build step – pure HTML + CSS
-- Fast & lightweight (great for Core Web Vitals)
+- Working navigation between all pages
+- 6 realistic recipe posts with images
+- About + Contact + Privacy Policy pages
+- Multiple Adsterra ad slots (banner, native, sidebar)
+- Fully responsive
+- Clean food-blog design
 
 ## How to Add Adsterra Ads
 
-1. Log in to your [Adsterra](https://adsterra.com) publisher account.
-2. Go to **Websites → Add Website** (or select existing) → **Create Ad Unit**.
-3. Recommended formats for this layout:
-   - **Popunder** → highest CPM, paste before `</head>`
-   - **Social Bar** → paste before `</body>`
-   - **Banner 728×90** → top of page
-   - **Banner 300×250** (Medium Rectangle) → sidebar + mid-content
-   - **Native Banner** → mid-content (blends with posts)
+1. Log in to your Adsterra publisher account.
+2. Add your website URL (e.g. `https://exnessmt5.github.io/sarcastickitchen/`).
+3. Create ad units (recommended: Popunder + Social Bar + 300×250 + Native).
+4. Open the HTML files and replace the placeholder comments with your real codes:
 
-4. Open `index.html` and replace the placeholder comments/divs with your actual ad codes.
+   - **Popunder** → paste before `</head>` on every page
+   - **Social Bar** → paste before `</body>` on every page
+   - **Banners / Native** → replace the dashed `ad-slot` boxes
 
-**Important Adsterra tips:**
-- Never put more than 3–4 banner units on one page.
-- Popunder + Social Bar usually give the best revenue.
-- Test different placements and check eCPM in the dashboard after a few days.
+## Deploy to GitHub Pages
 
-## Deploy to GitHub Pages (Free)
-
-1. Create a new repository on GitHub (e.g. `sarcastic-kitchen` or `yourusername.github.io`).
-2. Upload the contents of this folder (`index.html` + this README).
+1. Create a repository (or use existing).
+2. Upload **all files** in this folder to the root of the repo.
 3. Go to **Settings → Pages**.
-4. Under **Source** choose **Deploy from a branch** → `main` / `root`.
-5. Wait 1–2 minutes. Your site will be live at:
-   - `https://yourusername.github.io/repo-name/`  
-   or  
-   - `https://yourusername.github.io/` (if you named the repo `yourusername.github.io`)
-
-### Custom Domain (optional)
-Add a `CNAME` file with your domain and update DNS as shown in GitHub Pages docs.
-
-## Customization
-
-- Change the logo text, author name, and sample posts inside `index.html`.
-- Replace Unsplash images with your own recipe photos.
-- Update colors by searching for `#c45c26` (accent) and `#6a9e3e` (green link).
-- Add more posts by copying an `<article class="post-card">` block.
+4. Source: `main` branch + `/ (root)`.
+5. Your site will be live at:  
+   `https://YOUR-USERNAME.github.io/REPO-NAME/`
 
 ## File Structure
 
 ```
 sarcastic-cooking-landing/
-├── index.html      ← the whole site
-└── README.md       ← this file
+├── index.html
+├── about.html
+├── contact.html
+├── privacy-policy.html
+├── style.css
+└── README.md
 ```
 
-That’s it. One HTML file is all you need.
-
-Happy monetizing!
+That’s everything you need. Upload these files and the site is ready.

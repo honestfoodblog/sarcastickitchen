@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Sarcastic Kitchen</title>
+  <meta name="description" content="Get in touch with Sarcastic Kitchen for recipe questions, partnerships, or just to say hello.">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ADSTERRA POPUNDER CODE GOES HERE -->
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-top">
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="Pinterest">P</a>
+        </div>
+        <a href="index.html" class="logo">
+          Sarcastic
+          <span>Kitchen</span>
+        </a>
+        <form class="search-box" action="#" method="get" role="search">
+          <input type="search" name="q" placeholder="Search and hit enter..." aria-label="Search">
+          <button type="submit" aria-label="Search">🔍</button>
+        </form>
+      </div>
+      <nav class="main-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="index.html#recipes">Recipes</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <h1>Contact</h1>
+    <p class="page-meta">Questions, partnerships, or just saying hi</p>
+
+    <p>
+      Have a question about a recipe? Want to collaborate? Or just need someone to complain to about 
+      burnt toast? Drop a message below and I’ll get back to you as soon as I can.
+    </p>
+
+    <form class="contact-form" action="#" method="post" onsubmit="event.preventDefault(); alert('Thanks for your message! (This is a demo form – connect it to Formspree or similar for real emails.)');">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required placeholder="Your name">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required placeholder="What’s on your mind?"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p style="margin-top: 40px; text-align: center; color: #666; font-size: 0.95rem;">
+      For brand partnerships or media inquiries, you can also reach me at:<br>
+      <strong>hello@sarcastickitchen.example</strong>
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </nav>
+      <p>© 2026 Sarcastic Kitchen. All rights reserved.</p>
+      <p class="footer-copy">Made for honest cooking & honest ad revenue.</p>
+    </div>
+  </footer>
+
+  <!-- ADSTERRA SOCIAL BAR CODE GOES HERE -->
+</body>
+</html>
